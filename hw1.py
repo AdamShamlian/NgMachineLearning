@@ -248,3 +248,8 @@ def optional_main():
     print('For a 1650 square foot, 3 bedroom house, the predicted price is: {0}'.format(predict(newHouse, fittedTheta)))
 
     return 
+
+if __name__ == '__main__':
+    
+    required_main()
+    optional_main()
