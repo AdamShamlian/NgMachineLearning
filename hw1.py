@@ -18,7 +18,7 @@ def load_data(fileLocation, featureColumns, responseColumns):
 
     featureColumns and responseColumns are lists of indices corresponding to those data series,
     with the convention that the returned data is from left to right, features and then responses. """
-    return pd.read_csv(fileLocation, header=None).iloc[:, featureColumns + responseColumns]
+    return pd.read_csv(fileLocation, usecols=featureColumns + responseColumns, header=None)
 
 
 def plot_scatter(data):
